@@ -1,0 +1,19 @@
+### Get Merkle Root
+GET http://localhost:5000/merkle/merkle-root
+Accept: application/json
+
+### Get Merkle Proof for user 1
+GET http://localhost:5000/merkle/merkle-proof/1
+Accept: application/json
+
+### Get Merkle Proof for user 5
+GET http://localhost:5000/merkle/merkle-proof/5
+Accept: application/json
+
+### Get Merkle Proof for user 8
+GET http://localhost:5000/merkle/merkle-proof/8
+Accept: application/json
+
+### Try a non-existent user (should return 404)
+GET http://localhost:5000/merkle/merkle-proof/99
+Accept: application/json
